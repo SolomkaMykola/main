@@ -1,0 +1,16 @@
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+console.log(getRandomString());
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+apple
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+57,13,37,86,83,79,56,52,0,92,21,64,53,73,6,30,79,67,63,92,7,44,61,99,45,72,50,87,33,48,75,33,67,20,47,23,67,79,70,92,48,29,7,23,72,78,63,19,40,7,62,90,9,95,10 * true
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+true / grape
+console.log(getRandomString());
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
