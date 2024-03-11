@@ -1,0 +1,50 @@
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+banana + false
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const isEven = num => num % 2 === 0;
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const getUniqueValues = array => [...new Set(array)];
+const isEven = num => num % 2 === 0;
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const isEven = num => num % 2 === 0;
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+banana
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const isEven = num => num % 2 === 0;
+
+12,21,97,89,77,6,37,68,59,28,63,51,69,4,65,59,55 * 39
+const squareRoot = num => Math.sqrt(num);
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+20,67,44,45,10,77,43,2,77,26,20,69,18,24,53,90,90,26,18,34,67,41,38,66,29,66,57,48,25,45,78,49,26,88,71,48,74,18,55,15,21,38,74,30,82,2,34,16,8,47,47,28,28,76,61,58,27,82,30,13,74,61,37,63,24,3,46,79,6,95,3,72,6,69,27,46,4,66,22,47,2,55 / 81,55,81,37,54,63,25,25,20,72,90,69,18,6,10,32,16,17,62,39,56,80,2,42,17,76,82,72,41,70,88,21,78,7,45,67,24,94,2,19,25,98,64,37,88,65,78,62,66,10,81,38,42,61,39,10,38,82,56,79,27,75,11,23,35,49,24,78,97,57,11,67,74,99,23,38,7,30,92,21,8,39,20,92,28,31,31,6,85,10,40,70,15,20,86
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+const squareRoot = num => Math.sqrt(num);
+
+grape
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const squareRoot = num => Math.sqrt(num);
+66 + 27,51,23,69
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+false - 70
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+96,46,52,65,35,93,66,81,89,43,64,7,58,46,13,82,25,67,0,44,89,20,49,39,91,13,31,34,83,36,47,9,51,70,64,57,49,11 * 23,13,98,37,82,44,32,72,50,11,50,21,75,16,69,67,61,90,69,97,47,14,78,67,81,9,34,49,22,57,11,0,83,63,5,75,17,38,36,36,71,99,66,26,49,3,17,82,76,47,59,53,20,13,78,74,39,69,25,37,64,85,21,66,25,27,40,68,52,23,92,14
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+87 / 76,14,51,82,33,15,39,74,27,85,34,52,22,83,64,78,81,14,49,42,49,27,14,51,93,70,0,37,21,15,15,81,56,19,83,78,70,24,28,97,17,18,36,45,79,42,31,49,48,19,91,39,70,67,81,80,91,56,21,83,19,54,96,39,82,77,86
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const isPalindrome = str => str === str.split("").reverse().join("");
+
