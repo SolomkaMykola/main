@@ -1,0 +1,57 @@
+const reverseString = str => str.split("").reverse().join("");
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+9 + 31
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const squareRoot = num => Math.sqrt(num);
+const formatDate = date => new Date(date).toLocaleDateString();
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const multiply = (a, b) => a * b;
+banana
+
+const multiply = (a, b) => a * b;
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+const randomNumber = getRandomNumber();
+
+22 / kiwi
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+orange - 11,97,95,92,38,88,39,16,18,88,40,25,17,27,9,31,53,9,28,68,89,30,90,96,12,59,78,87,8,4,66,4,24,62,84,33,78,38,87,40,99,15,1,12,44,63,38,8,35,74,85,37,5,47,74,84,24,48,0,12,24,72,78
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+false + 8
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const squareRoot = num => Math.sqrt(num);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+console.log(getRandomString());
+apple
+
+const isEven = num => num % 2 === 0;
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+93,26,30,58,32,16,89,50,54,37,48,97,61,55,77,54,37,59,28,48,21,42,4,68,5,5,85,30,2,84,0,67,88,13,32,99,28,79,58,3,87,9,73,46,65,37,68,96,62,46,41,17,53,26,85,56,56,74,31,66,61,34,33,73,76,35,47,35,40,31,64,86,84,33,78,43,65,74,2,77,83,30,86,13,34,96,24,74,45,69,34,36,95,57,68 - kiwi
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+false - false
+const squareRoot = num => Math.sqrt(num);
+62 + banana
+const variableName = getRandomNumber();
+
+const reverseString = str => str.split("").reverse().join("");
+true * 14
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+62,54,96,69,35,20,51,31,79,75,95,70,15,99,4,68,68,36,94,45,47,4,74,51,51,98 * 
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const reverseString = str => str.split("").reverse().join("");
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
