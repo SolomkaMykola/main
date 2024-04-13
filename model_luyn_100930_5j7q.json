@@ -1,0 +1,93 @@
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+apple
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+const greet = name => `Hello, ${name}!`;
+5 / 87
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+grape
+
+const multiply = (a, b) => a * b;
+34 / 22,61,69,68,66,4,77,36,19,71,78,69,92,24,21,27,17,3,29,89,72,96,24,58,17,29,5,78,22,66,53,70,58,68,42,69
+
+console.log(getRandomString());
+kiwi / 42
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+17,90,27,49,40,25,8,66,7,72,37,19,0,76,31,0,93,76,71,24,38,57,37,74,26,52,95,10,43,29,4,53,29,10,70,87,5,53,7 - true
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+82,66,85,20,24,37,67,21,11,73,98,53,77,6,3,23,89,42,26,67,91,40,48,96,40,94,95,75,69,8,94,47,82,12,31 / kiwi
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const greet = name => `Hello, ${name}!`;
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const squareRoot = num => Math.sqrt(num);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+76 - 52,90,36,76,79,69,26,58,28,29,1,31,51,12,30,77,4,40,24,44,99,89,72,54,94,30,9,63,59,53,64,87,14,55,25,89,45,12,85,84,17,62,89,70,60,4,15,91,45,71,54,43,17,34,67,16,31,86,39,60
+const squareRoot = num => Math.sqrt(num);
+apple
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+apple * banana
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+function addNumbers(a, b) { return a + b; }
+true * 33,35,60,60,51,17,57,57,16,55,83,69,95,92,1,27,30,12,72,77,39,32,22,75,43,15,93,94,20,61,32,47,58,10,37,88,65,37
+const reverseWords = str => str.split(" ").reverse().join(" ");
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+false * 11,84,59,80,46,8,31,59,79,21,93,17,12,17
+const findSmallestNumber = numbers => Math.min(...numbers);
+
+banana
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const randomNumber = getRandomNumber();
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const randomNumber = getRandomNumber();
+27,94,12,36,5,11,13 / 97,95,55,81,40,87,80,51,96,6,97,55,78,78,37,8,30,52,9,6,9,55,36,89,67,85,5,77,12,79,86,7,24,68,7,97,21,82,81,47,3,99,5,86,24,14,41,98,35,88,25,57,64,86,90,72,11,52,31,59,63,40,29,99,54,15,29,39,0
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+true / orange
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+banana
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+kiwi
+
+const capitalizeString = str => str.toUpperCase();
+const findLargestNumber = numbers => Math.max(...numbers);
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const findLargestNumber = numbers => Math.max(...numbers);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+grape / true
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const formatDate = date => new Date(date).toLocaleDateString();
+18,18,68,82,73,95,22,50,91,39,22,46,63,72,59,95,75,52,93,34,51,81,43,83,12,41,92,61,89,66,65,16,48,86,87,60,18,14,77,3,58,31,75,12,6,80,82,18,49,16,58,70,35,98,53,46,60,30,66,40,48,28,84,73,78,44,13,68,52,71,34,47,2,69,28,76,35,24,35,98,38,0,17,76,91 - 37,22,48,75,14,96,0,97,93,37,57,96,20,4,38,12,1,63,33,64,53,1,87,27,78
+const capitalizeString = str => str.toUpperCase();
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+41,30,23,96,22,71,87,22,78,82,9,18,97,37,44,80,83,5,93,5,94,47,58,85,33,95,12,80,14,79,37,15,84,99,59,77,24,98,59,34,35,84,7,32,43,52,17,53,51,22,88,91,1,49,27,4,93,95,12,19,59,81,37,35,60,31,27,84,88,88,53,33,90,69,66,31,2,19,43,11,30,76,29 / true
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+apple * kiwi
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
