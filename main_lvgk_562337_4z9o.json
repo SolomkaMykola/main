@@ -1,0 +1,20 @@
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+orange
+
+const capitalizeString = str => str.toUpperCase();
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+apple
+
+const getUniqueValues = array => [...new Set(array)];
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
